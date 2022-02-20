@@ -1,14 +1,13 @@
 import AllMeetupsPage from "./pages/AllMeetups";
 import FavoritesPage from "./pages/Favorites";
 import NewMeetupPage from "./pages/NewMeetup";
-import MainNavigation from "./components/layouts/MainNavigation";
+import Layout from "./components/layouts/Layout";
 
 import { Route, Routes } from 'react-router-dom';
  
 function App() {
   return (
-    <div>
-      <MainNavigation />
+    <Layout>
       <Routes>
         <Route path="/" exact element={<AllMeetupsPage />} />
 
@@ -16,8 +15,7 @@ function App() {
         
         <Route path="/new-meetup" element={<NewMeetupPage />} />
       </Routes>
-      
-    </div>
+    </Layout>
   );
 }
 
