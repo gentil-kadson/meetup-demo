@@ -9,11 +9,11 @@ function App() {
   return (
     <Layout>
       <Routes>
-        <Route path="/" exact element={<AllMeetupsPage />} />
 
+        <Route path="/" exact element={<AllMeetupsPage />} />
         <Route path="/favorites" element={<FavoritesPage />} />
-        
         <Route path="/new-meetup" element={<NewMeetupPage />} />
+        
       </Routes>
     </Layout>
   );
